@@ -9,6 +9,7 @@
 	height: 300px;
 	background-image: url("../img/test2.jpg");
 	background-size: cover;
+	margin-bottom: 100px;
 }
 
 .foto
@@ -42,13 +43,6 @@
 
 }
 
-.persoon img
-{
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-}
-
 .pers_con 
 {
   	position: absolute;
@@ -56,18 +50,19 @@
   	bottom: 0;
   	left: 0;
   	right: 0;
-  	width: 301px;
+  	width: 75%;
 	height: 301px;
   	opacity: 0;
   	transition: .9s ease;
   	background-color: #F15024;
-  	border-radius: 50%;
+  	border-radius: 50% 20%;
   	transform: translateX(30%);
 }
 
 .col-6:hover .pers_con 
 {
   opacity: 1;
+  background-color: rgba(241,80,36, 0.9);
 }
 
 .tekst 
@@ -92,4 +87,16 @@
 	margin-top: -50px;
 	width: 100%;
 	text-align: center;
+}
+
+.tekst a
+{
+	color: white;
+	font-size: 56px;
+	transition: 0.5s;
+}
+
+.tekst a:hover
+{
+	color: #e1306c;
 }
