@@ -22,3 +22,19 @@
 	    height: 60px;
 	}
 }
+
+@media screen and (max-width: 1000px) 
+{
+	.pers_con 
+	{
+	  	transform: translateX(10%)!important;
+	}
+}
+
+@media screen and (min-width: 1200px) 
+{
+	.pers_con 
+	{
+	  	transform: translateX(45%)!important;
+	}
+}

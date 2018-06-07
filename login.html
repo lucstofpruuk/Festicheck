@@ -14,36 +14,26 @@
 </head>
 <body>
 
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light">
-			<div class="container">
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-		
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="navbar-nav mr-auto">
-			      <a class="navbar-link" href="index.html"><img id="logo" src="img/festicheck_logo.png"></a>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Actueel</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Festivals</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Over</a>
-			      </li>
-			    </ul>
-			    <ul class="navbar-nav">
-			    	<li class="nav-item" id="user">
-			    		<a class="nav-link" href="#">Gebruiker</a>
-			    	</li>
-			    	<li class="nav-item">
-			    		<a class="nav-link" href="login.html">Login</a>
-			    	</li>
-			    </ul>
-			  </div>
-		  </div>
-		</nav>
+<div id="myNav" class="overlay">
+  <div class="overlay-content">
+    <a href="index.html">Actueel</a>
+    <a href="#">Festivals</a>
+    <a href="over.html">Over</a>
+    <a href="#">Contact</a>
+    <div class="user">
+      <a href="#">Gebruiker</a>
+      <i class="fas fa-arrow-down"></i>
+      <a href="login.html">Inloggen</a>
+    </div>
+  </div>
+</div>
+
+<nav class="nav fixed-top">
+  <a href="index.html"><img id="logo" src="img/festicheck_logo.png"></a>
+  <div id="outer">
+    <span class="menu" id="x"></span>
+  </div>
+</nav>
 	
 	
 	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -113,24 +103,8 @@
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	
-<script>
-	$(".register").click(function(){
-		if($("#form").css('display') == 'block')
-		{
-			$("#form").hide();
-			$("#formregister").show();
-			$(".back").css({"min-height": "1000px"});
-			$(".containerform").css({"min-height": "1000px"});
-		} else{
-			$("#formregister").hide();
-			$("#form").show();
-			$(".back").css({"min-height": "100vh"});
-			$(".containerform").css({"min-height": "100vh"});
-		}
-	});
-</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>	
+<script src="js/script.js"></script>
 	
 </body>
 </html>

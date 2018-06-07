@@ -1,6 +1,11 @@
 /* Main CSS */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
+h1
+{
+  font-family: 'Roboto Slab', serif;
+}
+
 body
 {
 	background-color: rgba(242,242,242,1);
@@ -15,6 +20,7 @@ body
     background-color: #F15024;
     overflow-y: hidden;
     transition: 0.5s;
+    z-index: 5;
 }
 
 .overlay-content {
@@ -55,7 +61,7 @@ body
     width: 100%;
 }
 
-span {
+.nav span {
   display: block;
   width: 40px;
   height: 40px;
@@ -67,19 +73,19 @@ span {
   background: -webkit-linear-gradient(top, transparent 0%, transparent 20%, #2E313C 20%, #2E313C 23%, transparent 23%, transparent 48%, #2E313C 48%, #2E313C 50%, transparent 47%, transparent 76%, #2E313C 76%, #2E313C 78%, transparent 78%), -webkit-linear-gradient(transparent, transparent);
   background: linear-gradient(to bottom, transparent 0%, transparent 20%, #2E313C 20%, #2E313C 23%, transparent 23%, transparent 48%, #2E313C 48%, #2E313C 50%, transparent 47%, transparent 76%, #2E313C 76%, #2E313C 78%, transparent 78%), linear-gradient(transparent, transparent);
 }
-span:active, span:hover {
+.nav span:active, .nav span:hover {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
 }
-span.clicked {
+.nav span.clicked {
   background: -webkit-linear-gradient(135deg, transparent 0%, transparent 48%, #2E313C 49%, #2E313C 51%, transparent 51%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 48%, #2E313C 49%, #2E313C 51%, transparent 51%, transparent 100%);
   background: linear-gradient(-45deg, transparent 0%, transparent 48%, #2E313C 49%, #2E313C 51%, transparent 51%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 48%, #2E313C 49%, #2E313C 51%, transparent 51%, transparent 100%);
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-span.clicked:active, span.clicked:hover {
+.nav span.clicked:active, .nav span.clicked:hover {
   -webkit-transform: scale(0.9) rotate(180deg);
       -ms-transform: scale(0.9) rotate(180deg);
   }
@@ -133,12 +139,12 @@ nav
     font-family: 'Roboto Slab', serif;
 }
 
-.menu
+.nav .menu
 {
   margin-top: 20px;
 }
 
-input[type=text] {
+.content input[type=text] {
     width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -149,4 +155,11 @@ input[type=text] {
     background-position: left;
     background-repeat: no-repeat;
     background-size: 40px;
+}
+
+footer
+{
+  margin-top: 100px;
+  background-color: #F15024;
+  height: 80px;
 }
