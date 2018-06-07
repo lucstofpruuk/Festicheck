@@ -1,0 +1,24 @@
+@media screen and (max-width: 900px) 
+{
+	input
+	  {
+	  	margin-top: 100px;
+	  }
+}
+
+@media screen and (max-width: 993px) 
+{
+	input
+	  {
+	  	margin-top: 50px;
+	  }
+}
+
+@media screen and (max-width: 425px) 
+{
+	#logo
+	{
+	    width: 140px;
+	    height: 60px;
+	}
+}

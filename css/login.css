@@ -1,0 +1,184 @@
+/*CSS voor login formulier
+Import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+.containerform
+{
+	background-color: rgba(242,242,242,1);
+	float: right;
+	width: 50%;
+	height: 100vh;
+}
+
+#form
+{
+	padding: 120px 100px 0;
+}
+
+#formregister
+{
+	padding: 120px 100px 0;
+}
+
+label
+{
+	font-size: 24px;
+}
+
+/*BUTTON*/
+.btn {
+  border-radius: 4px;
+  background-color: #f15025 !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px 0 10px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media only screen and (max-width: 1024px)
+{
+	.containerform
+	{
+		background-color: rgba(242,242,242,1);
+		width: 100%;
+		float: none;
+	}
+
+	.carousel
+	{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 397px)
+{
+	::-webkit-input-placeholder
+	{
+		font-size: 12px;
+	}
+
+	#formregister, #form
+	{
+		padding: 20px;
+	}
+
+}
+
+@media only screen and (min-width: 1200px)
+{
+	.containerform
+	{
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 1400px)
+{
+	.containerform
+	{
+		width: 30%;
+	}
+}
+
+#formregister
+{
+	display: none;
+}
+
+small
+{
+	font-size: 14px;
+}
+
+i
+{
+	color: #f15025;
+}
+
+.carousel
+{
+	z-index: -1;
+	position: absolute;
+	width: 100vw;
+}
+
+.back
+{
+	background: no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	height: 100vh;
+  	background-attachment: fixed;
+}
+
+#back1
+{
+	background-image: url(../img/backgrounds/intents.jpg);
+}
+
+#back2
+{
+	background-image: url(../img/backgrounds/feest.jpg);
+}
+
+#back3
+{
+	background-image: url(../img/backgrounds/def.jpg);
+}
+
+#back4
+{
+	background-image: url(../img/backgrounds/cas.jpg);
+}
+
+#back5
+{
+	background-image: url(../img/backgrounds/myst.jpg);
+}
+
+@media only screen and (max-height: 800px)
+{
+
+	body
+	{
+		overflow-x: hidden;
+	}
+}

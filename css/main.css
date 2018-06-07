@@ -1,0 +1,152 @@
+/* Main CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body
+{
+	background-color: rgba(242,242,242,1);
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F15024;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+}
+
+#outer
+{
+    width: 100%;
+}
+
+span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 0px;
+  margin: 10px auto;
+  -webkit-transition: all .3s ease, -webkit-transform .2s ease;
+          transition: all .3s ease, transform .2s ease;
+  background: -webkit-linear-gradient(top, transparent 0%, transparent 20%, #2E313C 20%, #2E313C 23%, transparent 23%, transparent 48%, #2E313C 48%, #2E313C 50%, transparent 47%, transparent 76%, #2E313C 76%, #2E313C 78%, transparent 78%), -webkit-linear-gradient(transparent, transparent);
+  background: linear-gradient(to bottom, transparent 0%, transparent 20%, #2E313C 20%, #2E313C 23%, transparent 23%, transparent 48%, #2E313C 48%, #2E313C 50%, transparent 47%, transparent 76%, #2E313C 76%, #2E313C 78%, transparent 78%), linear-gradient(transparent, transparent);
+}
+span:active, span:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+span.clicked {
+  background: -webkit-linear-gradient(135deg, transparent 0%, transparent 48%, #2E313C 49%, #2E313C 51%, transparent 51%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 48%, #2E313C 49%, #2E313C 51%, transparent 51%, transparent 100%);
+  background: linear-gradient(-45deg, transparent 0%, transparent 48%, #2E313C 49%, #2E313C 51%, transparent 51%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 48%, #2E313C 49%, #2E313C 51%, transparent 51%, transparent 100%);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+span.clicked:active, span.clicked:hover {
+  -webkit-transform: scale(0.9) rotate(180deg);
+      -ms-transform: scale(0.9) rotate(180deg);
+  }
+
+nav
+{
+    background-color: #F15024;
+    height: 80px;
+}
+
+#logo
+{
+    width: 180px;
+    height: 80px;
+    position: absolute;
+}
+
+.content
+{
+  margin-top: 10%;
+  height: 1000px;
+}
+
+.user a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.user a:hover, .user a:focus {
+    color: #f1f1f1;
+}
+
+.bor
+{
+    background-color: black;
+    padding: 2px;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.bor:hover
+{
+    background-color: white;
+}
+
+.user a, .overlay a
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.menu
+{
+  margin-top: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    background-image: url("../img/search.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
