@@ -93,8 +93,10 @@ body
 
 nav
 {
-    background-color: #F15024;
+  background-color: rgba(0, 0, 0, 0.6);
+    /*background-color: #F15024;*/
     height: 80px;
+    transition: 0.3s;
 }
 
 #logo
