@@ -5,7 +5,7 @@ session_start();
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>FestiCheck</title>
 

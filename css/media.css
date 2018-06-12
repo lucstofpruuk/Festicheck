@@ -14,15 +14,6 @@
 	  }
 }
 
-@media screen and (max-width: 425px) 
-{
-	#logo
-	{
-	    width: 140px;
-	    height: 60px;
-	}
-}
-
 @media screen and (max-width: 768px) 
 {
 	.col-6
@@ -55,5 +46,21 @@
 	.groep
 	{
 		background-position: center;
+	}
+
+	#map
+	{
+		max-width: 100%;
+		height: 300px;
+	}
+
+	#cont
+	{
+		margin-top: 80px;
+	}
+
+	.container-contact
+	{
+		padding: 0;
 	}
 }

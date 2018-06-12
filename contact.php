@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Contact</title>
 
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
-<body>
+<body id="body">
 
 	<div id="myNav" class="overlay">
 	  <div class="overlay-content">
@@ -34,7 +34,7 @@
 	  </div>
 	</div>
 
-	<nav class="nav fixed-top">
+	<nav id="nav" class="nav fixed-top">
 	  		<a href="index.php"><img id="logo" src="img/festicheck_logo.png" alt="logo"></a>
 	  		<div id="outer">
 				<span class="menu" id="x"></span>
@@ -42,7 +42,7 @@
 	</nav>
 
 	<div class="container-contact">
-			<h1>Contact</h1>
+			<h1 id="cont">Contact</h1>
 		
 	<div id="formulier-div">
 		
