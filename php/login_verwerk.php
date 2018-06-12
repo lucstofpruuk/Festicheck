@@ -39,7 +39,7 @@ session_start();
 				$_SESSION['username'] = $user['username'];
 
 				echo "<p>Hallo $username, u bent ingelogd!</p>";
-				header("location:../index.html");
+				header("location:../index.php");
 			}
 			else
 			{

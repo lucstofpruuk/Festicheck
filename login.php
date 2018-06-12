@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
 	
 	<title>Inloggen</title>
 	
@@ -16,20 +16,26 @@
 
 <div id="myNav" class="overlay">
   <div class="overlay-content">
-    <a href="index.html">Actueel</a>
+    <a href="index.php">Actueel</a>
     <a href="#">Festivals</a>
-    <a href="over.html">Over</a>
-    <a href="#">Contact</a>
+    <a href="over.php">Over</a>
+    <a href="contact.php">Contact</a>
     <div class="user">
-      <a href="#">Gebruiker</a>
+      <?php if (isset($_SESSION['username'])) {
+      	echo "<a href=''>". $_SESSION['username']. "</a>";
+      } ?>
       <i class="fas fa-arrow-down"></i>
-      <a href="login.html">Inloggen</a>
+      <?php if (isset($_SESSION['username'])) {
+        echo "<a href='php/loguit.php'>Uitloggen</a>";
+      } else{
+        echo "<a href='login.php'>Inloggen</a>";
+        }?>
     </div>
   </div>
 </div>
 
 <nav id="nav" class="nav fixed-top">
-  <a href="index.html"><img id="logo" src="img/festicheck_logo.png"></a>
+  <a href="index.php"><img id="logo" src="img/festicheck_logo.png"></a>
   <div id="outer">
     <span class="menu" id="x"></span>
   </div>
@@ -58,7 +64,7 @@
 
 	<div class="containerform" >
 		<!--INLOGGEN-->
-		<form action="php/login.php" method="post" id="form">
+		<form action="php/login_verwerk.php" method="post" id="form">
 		  <h1><b>Inloggen</b></h1>
 		  <div class="form-group">
 			<label for="gebruikersnaam"><b>Gebruikersnaam</b></label>

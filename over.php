@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<meta name="viewport" content="width=device-width, initial-scale=0.7">
 
 	<title>Over ons</title>
 
@@ -17,20 +17,26 @@
 
 <div id="myNav" class="overlay">
   <div class="overlay-content">
-    <a href="index.html">Actueel</a>
+    <a href="index.php">Actueel</a>
     <a href="#">Festivals</a>
-    <a href="over.html">Over</a>
-    <a href="#">Contact</a>
+    <a href="over.php">Over</a>
+    <a href="contact.php">Contact</a>
     <div class="user">
-      <a href="#">Gebruiker</a>
+      <?php if (isset($_SESSION['username'])) {
+        echo "<a href=''>". $_SESSION['username']. "</a>";
+      } ?>
       <i class="fas fa-arrow-down"></i>
-      <a href="login.html">Inloggen</a>
+      <?php if (isset($_SESSION['username'])) {
+        echo "<a href='php/loguit.php'>Uitloggen</a>";
+      } else{
+        echo "<a href='login.php'>Inloggen</a>";
+        }?>
     </div>
   </div>
 </div>
 
 <nav id="nav" class="nav fixed-top">
-  <a href="index.html"><img id="logo" src="img/festicheck_logo.png"></a>
+  <a href="index.php"><img id="logo" src="img/festicheck_logo.png"></a>
   <div id="outer">
     <span class="menu" id="x"></span>
   </div>
@@ -42,7 +48,7 @@
   	<div class="groep"></div>
 
   	<div class="persoon">
-  		<div class="row">
+  		<div class="row info">
   			<div class="col-6">
   				<div class="foto" id="luc">
 	  				<div class="pers_con">
@@ -58,7 +64,7 @@
   				</div>
   			</div>
   		</div>
-  		<div class="row">
+  		<div class="row info">
   			<div class="col-6">
   				<div class="foto" id="brandie">
 	  				<div class="pers_con">
